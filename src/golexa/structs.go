@@ -1,4 +1,8 @@
-package alexa
+package golexa
+
+import (
+	"encoding/json"
+)
 
 // The primary wrapper of an Alexa request.
 type AlexaRequestPacket struct {
@@ -97,11 +101,3 @@ type AlexaResponseOutputSpeech struct {
 	Text string `json:"text" xml:"text"`
 	SSML string `json:"ssml" xml:"ssml"`
 } //
-
-// Alexa template responses structure.
-type AlexaTemplateResponse struct {
-	Name      string   `json:"name"`
-	Purpose   string   `json:"purpose"`
-	Responses []string `json:"responses"`
-	IsActive  bool     `json:"is_active"`
-}

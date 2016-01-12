@@ -1,0 +1,26 @@
+{
+    "error":{
+        "name":"error",
+        "purpose": "General error message to return when there is an issue with fulfilling the request.",
+        "responses": ["%%1%%"],
+        "is_active": true
+    },
+    "help":{
+        "name":"help",
+        "purpose": "General help message.",
+        "responses": ["You can check system status, get metrics, or run a job.  Which would you like to do?"],
+        "is_active": true
+    },
+    "test_2_variables":{
+        "name":"test_2_variables",
+        "purpose": "To make sure two variables can be replaced.",
+        "responses": ["My name is %%my_name%% and your name is %%your_name%%.","Nice to meet you %%your_name%%. My name is %%my_name%%."],
+        "is_active": true
+    },
+    "currentstatus":{
+        "name":"currentstatus",
+        "purpose": "Report on all primary status reports.",
+        "responses": ["RAM usage is at %%1%% percent. Go routine count is at %%2%%, and %%3%% of %%4%% databases are up."],
+        "is_active": true
+    }
+}
